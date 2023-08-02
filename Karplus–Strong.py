@@ -3,11 +3,6 @@ from matplotlib import pyplot as plt
 import wave
 from struct import pack
 SampleRate=44100
-def KS(In,Dur=4):
-    Out=[]
-    Buffer=[]
-    TotalSamples=Dur*SampleRate
-
 def Karplus_Strong(wavetable, n_samples,rate=0.499):
     """Synthesizes a new waveform from an existing wavetable, modifies last sample by averaging."""
     samples = [] 
